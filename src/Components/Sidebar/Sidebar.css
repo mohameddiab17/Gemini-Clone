@@ -1,0 +1,33 @@
+
+.sidebar{
+    background-color: var(--sidebar-color);
+    padding: 25px 15px;
+}
+
+.sidebar .new-chat{
+    padding: 10px 15px;
+    background-color: var(--new-chat-color) ;
+    border-radius: 50px;
+    font-size: 14px;
+    color: var(--gray);
+}
+
+.sidebar .recent{
+    animation: fadeIn 1.5s;
+}
+
+.sidebar .recent-entry{
+    border-radius: 50px;
+    color: var(--dark-gray);
+    transition: all 0.3s;
+}
+
+.sidebar .recent-entry:hover{
+    background-color: var(--light-gray);
+}
+
+@media (max-width:600px){
+    .sidebar{
+        display: none !important;
+    }
+}
